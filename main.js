@@ -62,7 +62,7 @@ ourCoin.addBlock(new Block(2, "01/03/2022", { amount: 12}));
 // console.log(JSON.stringify(ourCoin, null, 4)) //formatting with 4 spaces
 
 // test 2 - is our chain valid?
-console.log('Is blockchain valid? ' + ourCoin.isChainValid())
+// console.log('Is blockchain valid? ' + ourCoin.isChainValid())
 
 // test 3 - hack/tamper with blockchain
 // ourCoin.chain[1].data = { amount: 100};
@@ -70,11 +70,13 @@ console.log('Is blockchain valid? ' + ourCoin.isChainValid())
 // console.log('Is blockchain valid? ' + ourCoin.isChainValid()) //false
 
 // test 4 - recalculate hash
-ourCoin.chain[1].data = { amount: 100};
-ourCoin.chain[1].hash = ourCoin.chain[1].calculateHash();
-console.log('Is blockchain valid? ' + ourCoin.isChainValid()) // false
+// ourCoin.chain[1].data = { amount: 100};
+// ourCoin.chain[1].hash = ourCoin.chain[1].calculateHash();
+// console.log('Is blockchain valid? ' + ourCoin.isChainValid()) // false
 
 // step 5 - run node main.js
+
+
 
 /*
 output = {
