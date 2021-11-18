@@ -32,7 +32,7 @@ class Block {
             this.hash = this.calculateHash()
         }
 
-        console.log('Block mined: ', + this.hash)
+        console.log(`Block mined: ${this.hash}`)
     }
 
 }
@@ -85,7 +85,7 @@ console.log('Mining block 1... ')
 
 ourCoin.addBlock(new Block(1, "01/02/2022", { amount: 4}));
 
-console.log('Mining block 1... ')
+console.log('Mining block 2... ')
 ourCoin.addBlock(new Block(2, "01/03/2022", { amount: 12}));
 
 // test 1 - run node proof-of-work.js
